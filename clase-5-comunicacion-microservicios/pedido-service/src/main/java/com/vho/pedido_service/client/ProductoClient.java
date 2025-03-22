@@ -10,6 +10,6 @@ import com.vho.pedido_service.dto.ProductoDTO;
 @FeignClient(name = "producto-service")
 public interface ProductoClient {
 
-    @GetMapping("/productos")
+    @GetMapping("/productos/productos")
     List<ProductoDTO> obtenerProductos();
 }

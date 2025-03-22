@@ -20,6 +20,11 @@ public class PedidoController {
         this.productoClient = productoClient;
     }
 
+    @GetMapping
+    public String test() {
+        return "test";
+    }
+
     @GetMapping("/crear")
     public ResponseEntity<?> crearPedido() {
         List<ProductoDTO> productos = productoClient.obtenerProductos();

@@ -1,4 +1,4 @@
-package com.vho.producto_service.model;
+package com.vho.producto_service.controller;
 
 import java.util.List;
 
@@ -6,8 +6,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
+
+import com.vho.producto_service.model.Producto;
     
+@RestController
 @RequestMapping("/productos")  
 public class ProductoController {  
   
